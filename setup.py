@@ -1,7 +1,7 @@
 import setuptools
 
 setuptools.setup(
-    name="datasets",
+    name="dátasets",
     version="0.0.1",
     packages=setuptools.find_packages(),
     author="Holim Lim",
