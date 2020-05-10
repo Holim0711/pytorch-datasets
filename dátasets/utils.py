@@ -5,7 +5,7 @@ import json
 
 def read_excel(filename, dialect):
     with open(filename, newline='', encoding='utf-8') as file:
-        has_header = csv.Sniffer().has_header(file.read(1024))
+        has_header = csv.Sniffer().has_header(file.read(2048))
         file.seek(0)
         lines = [line for line in csv.reader(file, dialect)]
     return lines[1:] if has_header else lines
